@@ -1,6 +1,6 @@
-# rollTIME
+# timeRex 🦖
 
-This proposal outlines the dapp idea *rollTIME* based on the experiments I've been working on for representing an hour of time as a token.
+This proposal outlines the dapp idea *timeREx 🦖* based on the experiments I've been working on for representing an hour of time as a token.
 
 ## Overview
 

@@ -1,6 +1,7 @@
 // client-side js
 // run by the browser each time your view template is loaded
 
+//generate cards from airtable
 $(function() {
   $.getJSON('/data', function(data) {
     var $dataContainer = $('#data-container');
@@ -25,3 +26,20 @@ $(function() {
     });
   });
 });
+
+//Slider interaction number
+$(document).ready(function() {
+  
+  //create slider number
+   $('input[type="range"]').on("change mousemove", function() {
+     $("#ratingOne").html($(this).val());
+   })
+
+});
+
+//TODO create form submit for airtable POST
+//create owner with web3 provider
+  var userAddress = $(document).getElementById("userAddress").text();
+  console.log("userAddress: " + userAddress);
+  $(document).getElementById("address_owner").value = userAddress;
+

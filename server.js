@@ -50,7 +50,8 @@ app.get("/data", function(_, response) {
               link2: record.get("link2"),
               link3: record.get("link3"),
               in_cartel: record.get("MetaCartel"),
-              contract_address: record.get("contract_address")
+              contract_address: record.get("contract_address"),
+              email: record.get("email")
             };
           }),
         };

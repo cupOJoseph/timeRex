@@ -95,3 +95,25 @@ button:hover {
 button:active {
   box-shadow: none;
 }
+
+.coinCountFeedback {
+  text-align: center;
+  display: inline-block;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 1em;
+  /*    font-weight: bold;*/
+  background: #2E2E2E;
+  color: #fff;
+  border-radius: 8px;
+  width: 34px;
+  height: 34px;
+  padding-top: 3px;
+  position: relative;
+  top: -8px;
+  right: -5px;
+  margin-left: 10px;
+}
+
+label{
+  margin-top: 5px;
+}

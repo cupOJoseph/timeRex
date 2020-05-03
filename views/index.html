@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Airtable Furniture Gallery</title>
+    <title>🦖 TimeRex - Personal Tokens</title>
     <meta name="description" content="Rendering Airtable data in a web page">
     <link id="favicon" rel="icon" href="https://glitch.com/favicon.ico" type="image/x-icon">
     <meta charset="utf-8">
@@ -15,7 +15,7 @@
   <body>
     <header>
       <h1>
-        🦖 Time Rex
+        🦖 TimeRex
         <br>
       </h1>
       Powered by <a href="https://www.metacartel.org/" target="_blank">🌶️ MetaCartel</a> and the Ethereum Blockchain!
@@ -24,10 +24,69 @@
     <hr>
     <br>
     
+    <div>
+      <p>
+        TimeRex is a <strong>personal token</strong> management dapp. A <strong>personal tokens</strong> is any token issued by an individual who makes a promise to do some task or spend some amount of time. In our case we say each token represents 1 hour of the issuers time, although individuals are free to use it how they want.
+      </p>
+      <p>
+        We think personal tokens are cool because:
+      </p>
+      <ul>
+        <li>You can Invest in individuals</li>
+        <li>Top freelancers who are busy can sell their future time to people who want to schedule their project into tight schedules</li>
+        <li>We can create open markets to trade time with each other, and individuals can be paid more fairly for their labour</li>
+        <li>Helpers can donate their time and skills, or those of others, directly to charity and open source projects they want to support.</li>
+        <li><strong>Coming Soon</strong> right here: Creating bundles of different users' time to build new teams of devs, designers, project managers, anything else, all thrown together for maximum effectiveness.</li>
+      </ul>
+    </div>
+    
+    <h2>
+        Drop your personal token!
+    </h2>
+    <main>
+    <p>
+        Connect to an Ethereum Client first. <a href="https://metamask.io">Or get one like Meta Mask</a>.
+        <button
+    data-dh-feature="network"
+    data-dh-property-enable="true">
+    Connect Web3 🦊
+</button>
+      </p>
+    </main>
+    
     <main>
       <form>
-        <input name="dream" aria-label="a new dream" type="text" maxlength="100" placeholder="Dreams!">
-        <button type="submit" id="submit-dream">Submit Dream</button>
+        <label>Individual Name</label>
+        <input name="Name" type="text" maxlength="100" required placeholder="Alice Smith">
+        
+        <label>Owner Address</label>
+        <input type="text" name="owner_address" id="address_owner" required placeholder="0x7e225A2A269F7aF1c884B20F2BA30e8C6573EdfF"  />
+        
+        <label>Number of coins to mint</label>
+        <label class="coinCountFeedback" id="ratingOne">0</label>
+        <input name="coinNum"  type="range"  min="5" required max="250" value="25" maxlength="80" > 
+        
+        <br>
+        <label>Email Contact (Only shown to someone who purchases from you here)</label>
+        <input name="dream" type="email" maxlength="100" required placeholder="Tyr@nnosaur.us">
+        
+        <label><strong>Profile Links</strong> (You can add more or change these later)</label><br>
+        <br>
+        <label>A link to verify who you are, like a tweet about using timeRex</label>
+        <input name="link1" type="url" maxlength="100" required placeholder="twitter.com/timerex">
+        
+        <label>A link to impress, like a GitHub profile</label>
+        <input name="link2" type="url" maxlength="100" required placeholder="Gitcoin.co/user/timerex">
+        
+        <label>A link to a market, like Uniswap where you want people to buy from you (optional)</label>
+        <input name="link3" type="url" maxlength="100"  placeholder="Uniswap.com">
+        
+        <label>Avatar Photo</label>
+        <input type="file" id="myfile" name="myfile" accept=".png, .jpg">
+        
+        <button type="submit" id="submit-dream">Issue my Time Token</button>
+        <br>
+        <label>Don't have the ETH to deploy the contract? If this is your first time using crypto, send us a request here, and we will deploy your token for you.</label>
       </form>
     </main>
     
@@ -35,18 +94,45 @@
     <br>
     
     <h2>
-      Users 
+      Issuers 
     </h2>
     <main id="data-container">
-      Loading...
+      Loading....
+      <iframe src="https://giphy.com/embed/vrKUtJNMtB3Y4" width="480" height="349" ></iframe>
     </main>
-
     
+    <br>
+    <hr>
+    <br>
+    
+    <main>
+      <p>
+        More features under development:<br>
+      </p>
+      <ul>
+        <li>Individual profile pages (Mid May est release)</li>
+        <li>Dashboard for managing who has how many of an individuals tokens</li>
+        <li>Easy Gitcoin integrations</li>
+        <li>Uniswap market embeds</li>
+        <li></li>
+      </ul>
+    </main>
+    
+    <!-- Dapp hero holders-->
+    <div 
+   data-dh-feature="user" 
+   data-dh-property-address="true" id="userAddress">
+   *User Address*
+  </div>
+    
+    <!-- ================================= -->
 
     <!-- Your web-app is https, so your scripts need to be too -->
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"
             integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
             crossorigin="anonymous"></script>
+        <script src="https://package.dapphero.io/main.js" id="dh-apiKey" data-api="1588437343530x518801248284049400"></script>
+
     <script src="/client.js"></script>
 
   </body>

@@ -33,13 +33,13 @@ $(document).ready(function() {
   //create slider number
    $('input[type="range"]').on("change mousemove", function() {
      $("#ratingOne").html($(this).val());
-   })
+   });
 
 });
 
 //TODO create form submit for airtable POST
 //create owner with web3 provider
-  var userAddress = $(document).getElementById("userAddress").text();
+  var userAddress = document.getElementById("userAddress").textinnerHTML;
   console.log("userAddress: " + userAddress);
-  $(document).getElementById("address_owner").value = userAddress;
+  document.getElementById("address_owner").attr("value", userAddress);
 

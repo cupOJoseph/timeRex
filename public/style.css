@@ -117,3 +117,61 @@ button:active {
 label{
   margin-top: 5px;
 }
+
+/* cards*/
+
+
+.gallery-card a{
+  color: #000;
+  
+}
+
+.gallery-card a:visited {
+  color: #000;
+  
+}
+
+.gallery-card a:hover{
+  text-decoration: none;
+}
+
+.gallery-card .tokenPrice{
+  color: darkgreen;
+}
+
+.gallery-card ul {
+    width: 200px;           /* change it to whatever you like */
+    position: relative;
+
+    /* these should be probably already set up by `reset.css` */ 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery-card ul:before {
+    border-right: 0;    
+}
+
+.gallery-card ul:after {
+    position: absolute;
+    top: 0;
+    left: 48%;
+    margin-left: 1px;    
+}
+
+.gallery-card li {
+    text-align: left;
+    width: 48%;
+    float: left;
+    margin-bottom: -1px;
+}
+
+.gallery-card li:nth-child(even) {
+    margin-left: -1px;
+}
+
+linkBox{
+  margin-bottom: 2em;
+}
+
